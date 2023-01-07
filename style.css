@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+}
+
+body, html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  height: 70px;
+  padding: 0 50px;
+}
+
+nav .logo {
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+nav .nav-items {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  padding: 0 0 0 40px;
+}
+
+nav .nav-items li {
+  padding-right: 30px;
+}
+
+nav .nav-items li a {
+  color: gray;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+nav .nav-items li .active {
+  color: black;
+  border-bottom: 2px solid rgb(45, 76, 231);
+  width: 100%;
+  border-radius: 1px;
+  transition: 0.5s ease;
+}
+
+nav .nav-items li a:hover {
+  color: black;
+  transition: 0.4s ease;
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.mission p {
+  font-size: 30px;
+  width: 800px;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.photo3, .photo2, .photo1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.images .photo2 img, .images .photo1 img, .images .photo3 img {
+  width: 269px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.caption {
+  font-weight: 350;
+  font-size: 20px;
+  width: 280px;
+  text-align: center;
+  line-height: 25px;
+}
+
+#aboutsection {
+  padding-top: 1.3em;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.about img {
+  width: 275px;
+  border-radius: 10px;
+}
+
+.about p {
+  width: 300px;
+  font-size: 20px;
+  font-weight: 300px;
+  text-align: left;
+}
+
+.video {
+  margin-top: 5em;
+  margin-bottom: 4em;
+}
+
+.videotext {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.videotext p {
+  font-size: 30px;
+  width: 800px;
+  text-align: center;
+}
+
+.videoframe {
+  display: flex;
+  justify-content: center;
+}
+
+.videoframe iframe {
+  border-radius: 10px;
+}
