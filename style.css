@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,360,400,500");
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1}
+}
+
 
 * {
   box-sizing: border-box;
@@ -6,6 +12,7 @@
   padding: 0;
   outline: none;
   list-style: none;
+  animation: fadeIn linear 1.25s;
 }
 
 body, html {
@@ -63,7 +70,7 @@ nav .nav-items li a:hover {
 .mission {
   display: flex;
   justify-content: center;
-  margin-top: 3em;
+  padding-top: 3em;
 }
 
 .mission p {
@@ -95,15 +102,17 @@ nav .nav-items li a:hover {
 }
 
 .caption {
-  font-weight: 350;
+  font-weight: 360;
   font-size: 20px;
   width: 280px;
   text-align: center;
-  line-height: 25px;
+  line-height: 30px;
 }
 
 #aboutsection {
   padding-top: 1.3em;
+  margin-top: 2em;
+  padding-bottom: 1.5em;
 }
 
 .about {
@@ -124,6 +133,7 @@ nav .nav-items li a:hover {
   font-size: 20px;
   font-weight: 300px;
   text-align: left;
+  line-height: 28px;
 }
 
 .video {
