@@ -12,6 +12,8 @@
   outline: none;
   list-style: none;
   animation: fadeIn linear 1.25s;
+  user-select: none;
+
 }
 
 body, html {
@@ -87,13 +89,24 @@ nav .nav-items li a:hover {
 
 .mission .squiggly {
   position: absolute;
-  top: 13px;
-  left: 246px;
+  top: 53px;
+  left: 337px;
 }
 
 .mission .squiggly img {
-  width: 175px;
-  height: auto;
+  width: 147px;
+  height: 100%;
+}
+
+.mission .circle {
+  position: absolute;
+  top: -60px;
+  left: 240px;
+}
+
+.mission .circle img {
+  width: 190px;
+  height: 85%;
 }
 
 /* photos (first layer on mission) */
@@ -123,6 +136,14 @@ nav .nav-items li a:hover {
   border-radius: 10px;
 }
 
+.photo2photo img {
+  box-shadow: -15px 15px #db4854;
+}
+
+.photo3photo img {
+  box-shadow: -15px 15px #3CACE2;
+}
+
 .accent2 {
   position: absolute;
   top: -30px;
@@ -137,11 +158,20 @@ nav .nav-items li a:hover {
 .accent3 {
   position: absolute;
   top: -20px;
-  left: 0;
+  left: -10px;
 }
 
-.caption {
-  margin-top: 200px;
+.photo2 .caption, .photo3 .caption {
+  margin-top: 210px;
+  font-weight: 360;
+  font-size: 20px;
+  width: 280px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.photo1 .caption {
+  margin-top: 300px;
   font-weight: 360;
   font-size: 20px;
   width: 280px;
@@ -152,8 +182,8 @@ nav .nav-items li a:hover {
 /* about */
 
 #aboutsection {
-  padding-top: 1.3em;
-  margin-top: 5em;
+  padding-top: 3em;
+  margin-top: 2em;
   padding-bottom: 1.5em;
 }
 
@@ -176,7 +206,7 @@ nav .nav-items li a:hover {
 .aboutimage {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 70px;
   align-items: center;
   padding-top: 2.5em;
 }
@@ -184,6 +214,7 @@ nav .nav-items li a:hover {
 .aboutimage img {
   width: 275px;
   border-radius: 10px;
+  box-shadow: -15px 15px #FFD731;
 }
 
 .aboutimage p {
