@@ -5,7 +5,6 @@
   100% {opacity:1}
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -67,17 +66,37 @@ nav .nav-items li a:hover {
   transition: 0.4s ease;
 }
 
-.mission {
+/* mission */
+
+.mission_container {
   display: flex;
   justify-content: center;
-  padding-top: 3em;
+  padding-top: 2.5em;
 }
 
-.mission p {
+.mission {
+  position: relative;
+}
+
+.sentence1 {
   font-size: 30px;
+  font-weight: 400;
   width: 800px;
   text-align: center;
 }
+
+.mission .squiggly {
+  position: absolute;
+  top: 13px;
+  left: 246px;
+}
+
+.mission .squiggly img {
+  width: 175px;
+  height: auto;
+}
+
+/* photos (first layer on mission) */
 
 .images {
   display: flex;
@@ -87,21 +106,42 @@ nav .nav-items li a:hover {
   margin-top: 50px;
 }
 
-.photo3, .photo2, .photo1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
+.photo2, .photo1, .photo3 {
+  position: relative;
 }
 
-.images .photo2 img, .images .photo1 img, .images .photo3 img {
+.photo2photo, .photo1photo, .photo3photo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.photo2photo img, .photo1photo img, .photo3photo img {
   width: 269px;
   height: auto;
   border-radius: 10px;
 }
 
+.accent2 {
+  position: absolute;
+  top: -30px;
+  left: -50px;
+}
+
+.accent2 img, .accent3 img {
+  width: 350px;
+  height: auto;
+}
+
+.accent3 {
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
 .caption {
+  margin-top: 200px;
   font-weight: 360;
   font-size: 20px;
   width: 280px;
@@ -109,26 +149,44 @@ nav .nav-items li a:hover {
   line-height: 30px;
 }
 
+/* about */
+
 #aboutsection {
   padding-top: 1.3em;
-  margin-top: 2em;
+  margin-top: 5em;
   padding-bottom: 1.5em;
 }
 
 .about {
+  margin-top: 5em;
+}
+
+.abouttext {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.abouttext p {
+  font-size: 30px;
+  width: 800px;
+  text-align: center;
+}
+
+.aboutimage {
   display: flex;
   justify-content: center;
   gap: 40px;
   align-items: center;
-  margin-top: 1em;
+  padding-top: 2.5em;
 }
 
-.about img {
+.aboutimage img {
   width: 275px;
   border-radius: 10px;
 }
 
-.about p {
+.aboutimage p {
   width: 300px;
   font-size: 20px;
   font-weight: 300px;
