@@ -13,7 +13,6 @@
   list-style: none;
   animation: fadeIn linear 1.25s;
   user-select: none;
-
 }
 
 body, html {
@@ -101,7 +100,7 @@ nav .nav-items li a:hover {
 .mission .circle {
   position: absolute;
   top: -60px;
-  left: 240px;
+  left: 234px;
 }
 
 .mission .circle img {
@@ -179,6 +178,52 @@ nav .nav-items li a:hover {
   line-height: 30px;
 }
 
+/* second row */
+
+.images_row2 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 130px;
+  margin-top: 50px;
+}
+
+.photo4, .photo5, .photo6 {
+  position: relative;
+}
+
+.photo4photo, .photo5photo, .photo6photo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.photo4photo img, .photo5photo img, .photo6photo img {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.photo5photo img {
+  box-shadow: -15px 15px #db4854;
+}
+
+.photo4photo img {
+  box-shadow: -15px 15px #3CACE2;
+}
+
+.photo4 .caption, .photo5 .caption, .photo6 .caption {
+  margin-top: 280px;
+  font-weight: 360;
+  font-size: 20px;
+  width: 320px;
+  text-align: center;
+  line-height: 30px;
+}
+
+
+
 /* about */
 
 #aboutsection {
@@ -249,4 +294,23 @@ nav .nav-items li a:hover {
 
 .videoframe iframe {
   border-radius: 10px;
+}
+
+.gallery {
+  margin: auto;
+  left: 50%;
+  width: 930px;
+  padding: 10px;
+}
+
+
+.gallery img {
+  width: 300px;
+  height: 225px;
+  padding: 10px;
+}
+
+.gallery img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
 }
